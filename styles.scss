@@ -51,7 +51,15 @@
       }
       .calculadora{
         grid-template-columns: 1fr;
+        border: none;
+        width: 95%;
+
     }
+
+    .custom-shape-divider-bottom-1624688116{
+        display: none;
+    }
+
     body i.fa-bars{
         display: block;
     }
