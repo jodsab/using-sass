@@ -1,0 +1,72 @@
+@import "nav_container";
+@import "header";
+@import "section";
+@import "calculadora";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    overflow-x: hidden;
+
+}
+
+
+:root{
+    --lines-bg-color: #00E6A4;
+    --h1h2-text-color: #5100F7;
+    --textimg-bg-color: #EDF5F3;
+    --blck-op-color: #000000;
+    --optional-extra-color: #00E0A1;
+}
+
+@media (max-width: 600px ) {
+    .header {
+        grid-template-columns: 1fr;
+        margin-top: 70px;
+    }
+    .nav_container ul.nav_menu{
+        display: none;
+    }
+
+    .nav_container ul.show{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 62px;
+        right: 0;
+        background-color: rgba(0, 0, 0,.5);
+        padding: 15px;
+        border-radius: 15px;
+        a{
+            margin: 5px 0;
+            padding: 10;
+            text-align: center;
+        }
+    }
+
+    .section::-webkit-scrollbar {
+        display:none;            /* width of the entire scrollbar */
+      }
+      .calculadora{
+        grid-template-columns: 1fr;
+    }
+    body i.fa-bars{
+        display: block;
+    }
+}
+
+@media (max-width: 400px ) {
+    .header {
+        grid-template-columns: 1fr;
+        height: 100%;
+        .title_header{
+            .medalla{
+                margin-top: 45px;
+
+            }
+        }
+    }
+
+}
