@@ -266,6 +266,10 @@ body i.fa-bars {
   transition: all .3s ease-in-out;
 }
 
+.section .carta1 img {
+  height: 60%;
+}
+
 .section .carta1 h2 {
   color: #00E6A4;
 }
