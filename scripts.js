@@ -1,4 +1,3 @@
-
 function openMenu(){
     let menu = document.querySelector("#opMenu");
     menu.classList.toggle("show");
@@ -14,7 +13,7 @@ function crearCarta(src, dsct, vence){
     const fvenc = document.createElement("p");
     const button = document.createElement("button");
 
-    h2text.innerHTML = dsct;
+    h2text.innerHTML = `${dsct} % Dscto`;
     img.src = src;
     fvenc.innerHTML = vence;
     button.innerHTML = "COMPRAR";
@@ -29,35 +28,11 @@ function crearCarta(src, dsct, vence){
     divCartas.appendChild(newDiv);
 }
 
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/heraldo.png","100% dscto","99/99/9999");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/leyenda.png","10% dscto","12/07/1995");
-crearCarta("images/divine.png","10% dscto","12/07/1995");
-crearCarta("images/inmortal.png","2% dscto", "15/05/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/inmortal.png","2% dscto", "15/05/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/inmortal.png","2% dscto", "15/05/1995");
-crearCarta("images/heraldo.png","100% dscto","99/99/9999");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/inmortal.png","2% dscto", "15/05/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/inmortal.png","2% dscto", "15/05/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/inmortal.png","2% dscto", "15/05/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
-crearCarta("images/ancestro.png","50% dscto","19/07/1995");
+fetch('./cards.json')
+    .then(res => {
+        return res.json();
+    })
+    .then(data => data.Cards.forEach(e => crearCarta( e.img, e.dscto, e.fvenc)));
 
 function scrollSectionRight(){
     divCartas.scrollBy({
@@ -93,8 +68,6 @@ function pagoSelect(){
 }
 
 var botonCalcular = document.getElementById("calcular");
-
-
 
 var precioAnc = 30;
 var precioDiv = 35;
@@ -136,7 +109,7 @@ botonCalcular.addEventListener("click",()=>{
             alert("No ingresó cantidad adecuada");
         }
         total = Math.ceil(total);
-        alert(total);
+        alert(`El costo es S/${total}.00`);
     }
     else if (valoropt == "Presupuesto"){
        var pagoxd = document.getElementById("porsoles").value;
@@ -161,7 +134,7 @@ botonCalcular.addEventListener("click",()=>{
            alert("No ingresó cantidad adecuada");
        }
        total2 = Math.ceil(total2);
-       alert(total2*10);
+       alert(`Recibirás ${total2*10} MMR`);
 
 
     }

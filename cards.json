@@ -1,0 +1,87 @@
+{"Cards" : [
+    {
+        "id": 1,
+        "medal":"leyenda",
+        "img":"images/leyenda.png",
+        "dscto": 20,
+        "fvenc": "19/07/2022"
+    },
+    {
+        "id": 2,
+        "medal":"ancestral",
+        "img":"images/ancestro.png",
+        "dscto": 15,
+        "fvenc": "19/07/2022"
+    },
+    {
+        "id": 3,
+        "medal":"inmortal",
+        "img":"images/inmortal.png",
+        "dscto": 32,
+        "fvenc": "19/07/2022"
+    },
+    {
+        "id": 4,
+        "medal":"heraldo",
+        "img":"images/heraldo.png",
+        "dscto": 12,
+        "fvenc": "19/07/2022"
+    },
+    {
+        "id": 5,
+        "medal":"leyenda",
+        "img":"images/leyenda.png",
+        "dscto": 20,
+        "fvenc": "19/07/2022"
+    },
+    {
+        "id": 6,
+        "medal":"ancestral",
+        "img":"images/ancestro.png",
+        "dscto": 15,
+        "fvenc": "19/07/2022"
+    },
+    {
+        "id": 7,
+        "medal":"inmortal",
+        "img":"images/inmortal.png",
+        "dscto": 32,
+        "fvenc": "19/07/2022"
+    },
+    {
+        "id": 8,
+        "medal":"heraldo",
+        "img":"images/heraldo.png",
+        "dscto": 12,
+        "fvenc": "19/07/2022"
+    },
+    {
+        "id": 9,
+        "medal":"leyenda",
+        "img":"images/leyenda.png",
+        "dscto": 20,
+        "fvenc": "19/07/2022"
+    },
+    {
+        "id": 10,
+        "medal":"ancestral",
+        "img":"images/ancestro.png",
+        "dscto": 15,
+        "fvenc": "19/07/2022"
+    },
+    {
+        "id": 11,
+        "medal":"inmortal",
+        "img":"images/inmortal.png",
+        "dscto": 32,
+        "fvenc": "19/07/2022"
+    },
+    {
+        "id": 12,
+        "medal":"heraldo",
+        "img":"images/heraldo.png",
+        "dscto": 12,
+        "fvenc": "19/07/2022"
+    }
+]
+}
